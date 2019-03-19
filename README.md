@@ -1,6 +1,6 @@
-<hp align="center" ExWa (WhatsApp for CLI with API)
-<img align="center" src="/screenshoot.png">
-</p>
+##            ExWa (WhatsApp for CLI with API)
+            <img align="center" src="/screenshoot.png">
+
 <br>
 ExWa adalah sebuah tool sederhana yang ditulis menggunakan PHP, yang berfugsi untuk menggunakan sebuah aplikasi WhatsApp versi CLI dengan bantuan API dari sebuah situs apiwha.com
 <br>
