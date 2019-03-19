@@ -96,6 +96,6 @@ while (true) {
 	} elseif(strstr("--kirim", $command) or strtr("kirim", $command)) {
 		kirim_pesan();
 	} else {
-		echo "ente aya";;
+		echo "Gk iso moco ? /n";;
 	}
 }
