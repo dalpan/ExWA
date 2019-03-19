@@ -4,8 +4,8 @@ ExWa adalah sebuah tool sederhana yang ditulis menggunakan PHP, yang berfugsi un
 <br>
 ### Instalation :
 
-$ git clone https://github.com/dalpan/exwa <br>
-$ cd exwa <br>
+$ git clone https://github.com/dalpan/ExWa <br>
+$ cd ExWa <br>
 $ php exwa.php <br>
 
 ### Usage :
