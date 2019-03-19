@@ -1,5 +1,5 @@
 ## ExWa (WhatsApp for CLI with API)
-![Screenshoot](/screenshoot.png, /screenshoot2.png)
+![Screenshoot](/screenshoot.png)(/screenshoot2.png)
 <br>
 ExWa adalah sebuah tool sederhana yang ditulis menggunakan PHP, yang berfungsi untuk menggunakan sebuah aplikasi WhatsApp versi CLI dengan bantuan API dari sebuah situs apiwha.com
 <br>
