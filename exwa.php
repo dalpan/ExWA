@@ -77,8 +77,8 @@ color
 ("green","--------- WhatsApp CLI with API                                
 Run At : {$kernel}
 Donate : paypal.me/dalpan
-Usage : -- show (show message)
-	-- kirim (send message)
+Usage : --show (show message)
+	--kirim (send message)
 -------------------------------\n");
 }
 
