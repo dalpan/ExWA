@@ -18,7 +18,7 @@ $ --show <br>
 $ --kirim <br>
   Untuk mengirim pesan anda<br><br>
   
-![Screenshoot](/screenshoot.png)
+![Screenshoot](/screenshoot2.png)
 
 ####  Note : Gunakan awalan 62 untuk nomor tujuan.
 
