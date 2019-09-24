@@ -20,6 +20,19 @@ $ --kirim <br>
   
 ![Screenshoot](/screenshoot2.png)
 
-####  Note : Gunakan awalan 62 untuk nomor tujuan.
+### update spam message :
 
-Contact me : danangavanmaulana@gmail.com
+<pre>
+[ExWA]-> --bomb
+ Nomor Tujuan : 6283827264206
+ Pesan Anda : test bot
+ Jumlah Pesan : 5
+ [Sukses] Message queued 
+ [Sukses] Message queued 
+ [Sukses] Message queued 
+ [Sukses] Message queued 
+ [Sukses] Message queued 
+[ExWA]-> 
+</pre>
+
+contact@dalpan.co
