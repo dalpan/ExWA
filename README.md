@@ -11,7 +11,7 @@ $ php exwa.php <br>
 
 ### Usage :
 
-Daftar terlebih dahulu di https://apiwha.com/ dan verifikasi nomer anda nantinya anda akan mendapat sebuah APIKEY untuk setiap nomer yang anda daftarkan, pastekan di bagian define("APIKEY",".....":); pada script diatas
+Daftar terlebih dahulu di https://rapiwha.com/ dan verifikasi nomer anda nantinya anda akan mendapat sebuah APIKEY untuk setiap nomer yang anda daftarkan, pastekan di bagian define("APIKEY",".....":); pada script diatas
 
 $ --show <br>
   Untuk menampilkan list pesan anda <br>
