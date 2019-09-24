@@ -1,6 +1,6 @@
 <?php
 error_reporting(0);
-define("APIKEY", "PASTEKAN_DISINI_APIKEY_NYA"); // Get Api -> https://panel.apiwha.com/
+define("APIKEY", "Paste API Key disini"); // Get Api -> https://panel.rapiwha.com/
 function color($color = "default" , $text){
 	$arrayColor = array(
 		'grey' 		=> '1;30',
@@ -32,6 +32,33 @@ function memuat(){
 		color("purple"," [Terkirim ({$dikirim})] Pesan : {$pesan} Ke {$penerima}\n");
 		}
 	}
+}
+function pesan_bomb(){
+    color("nevy"," Nomor Tujuan : ");
+    $nomor = trim(fgets(STDIN));
+    color("nevy"," Pesan Anda : ");
+    $pesan = trim(fgets(STDIN));
+    color("nevy"," Jumlah Pesan : ");
+    $jumlah = trim(fgets(STDIN));
+    $jumlah = (int) $jumlah;
+    for($i=0;$i<$jumlah;$i++){
+    $data = array(
+        "apikey" => APIKEY,
+        "number" => $nomor,
+        "text" => $pesan
+    );
+    $respon = json_decode(file_get_contents("http://panel.rapiwha.com/send_message.php?".http_build_query($data)),1);
+    if(!$respon){
+        color("red"," [Failed]");
+        color("white","Connecttion Timeout\n");
+    }
+    $pesan = $respon['description'];
+    if($respon['result_code']==0){
+        color("green"," [Sukses] {$pesan} \n");
+    } else {
+        color("red"," [Gagal] {$pesan}\n");
+    }
+    }
 }
 function kirim_pesan(){
 	color("nevy"," Nomor Tujuan (62): ");
@@ -79,6 +106,7 @@ Run At : {$kernel}
 Donate : paypal.me/dalpan
 Usage : --show (show message)
 	--kirim (send message)
+	--bomb (spam message)
 -------------------------------\n");
 }
 
@@ -93,9 +121,11 @@ while (true) {
 	$command = trim(fgets(STDIN));
 	if(strstr("--show", $command) or strtr("show", $command)) {
 		memuat();
-	} elseif(strstr("--kirim", $command) or strtr("kirim", $command)) {
+	}elseif(strstr("--kirim", $command) or strtr("kirim", $command)) {
 		kirim_pesan();
-	} else {
+	}elseif (strstr("--bomb",$command) or strtr("bomb", $command)) {
+        pesan_bomb(); 
+	}else {
 		echo "Gk iso moco ? /n";;
 	}
 }
